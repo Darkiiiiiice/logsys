@@ -52,6 +52,7 @@ type Logger struct {
 }
 
 func Init(out io.Writer, prefix string, flags int, level int) *Logger {
+	log.Fatalln()
 
 	if LFileOut == flags {
 		prefix = fmt.Sprintf(" %s ", prefix)
